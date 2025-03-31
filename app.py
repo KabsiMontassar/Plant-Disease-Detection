@@ -7,7 +7,8 @@ from model_loader import load_model, preprocess_image, predict_disease
 from chat_app import groq_chatbot
 
 # Load the disease diagnosis model
-model_path = "attached_assets/mobilenetv2.h5"
+import timm
+model_path = timm.create_model('montassarTester/PDD_completemodel', pretrained=True)
 model = load_model(model_path)
 
 # Load class labels

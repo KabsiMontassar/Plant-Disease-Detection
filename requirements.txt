@@ -6,4 +6,6 @@ groq
 opencv-python
 opencv-python-headless
 bing_image_downloader
-dotenv
+python-dotenv
+huggingface_hub
+timm
